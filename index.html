@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DATID-3D: Diversity-Preserved Domain Adaptation Using Text-to-Image Diffusion for 3D Generative Model">
-  <meta name="keywords" content="DATID-3D, Text-guided Domain Adaptation, 3D Generative Models">
+        content="Neural Diffeomorphic Non-uniform B-spline Flows">
+  <meta name="keywords" content="Neural Diffeomorphic Non-uniform B-spline Flows, Generative Models, Normalizing Flows">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DATID-3D: Diversity-Preserved Domain Adaptation Using Text-to-Image Diffusion for 3D Generative Model</title>
+  <title>Neural Diffeomorphic Non-uniform B-spline Flows</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://gwang-kim.github.io/">
+      <a class="navbar-item" href="https://smhongok.github.io/">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -79,10 +79,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DATID-3D: Diversity-Preserved Domain Adaptation Using Text-to-Image Diffusion for 3D Generative Model</h1>
+          <h1 class="title is-1 publication-title">Neural Diffeomorphic Non-uniform B-spline Flows</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://gwang-kim.github.io/">Gwanghyun Kim</a><sup>1</sup>,</span>
+              <a href="https://smhongok.github.io/">Seongmin Hong</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://icl.snu.ac.kr/pi">Se Young Chun</a><sup>1,2</sup></span>
           </div>
@@ -95,7 +95,7 @@
             <span class="author-block">Seoul National University, Korea</span>
           </div>
           <span class="author-block">
-            <h1 class="title is-size-4  publication-venue">CVPR 2023</h1>
+            <h1 class="title is-size-4  publication-venue">AAAI 2023</h1>
           </span>
 
 
@@ -195,19 +195,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent 3D generative models have achieved remarkable performance in synthesizing high resolution photorealistic images with view consistency and detailed 3D shapes, but training them for diverse domains is challenging since it requires massive training images and their camera distribution information.
-          </p>
-
-          <p>
-            Text-guided domain adaptation methods have shown impressive performance on converting the 2D generative model on one domain into the models on other domains with different styles by leveraging the CLIP (Contrastive Language-Image Pre-training), rather than collecting massive datasets for those domains.
-            However, one drawback of them is that the sample diversity in the original generative model is not well-preserved in the domain-adapted generative models due to the deterministic nature of the CLIP text encoder.
-            Text-guided domain adaptation will be even more challenging for 3D generative models not only because of catastrophic diversity loss, but also because of inferior text-image correspondence and poor image quality.
-          </p>
-
-          <p>
-            <b> Here we propose DATID-3D, a novel pipeline of text-guided domain adaptation tailored for 3D generative models using text-to-image diffusion models that can synthesize diverse images per text prompt without collecting additional images and camera information for the target domain.</b>
-            Unlike 3D extensions of prior text-guided domain adaptation methods, our novel pipeline was able to fine-tune the state-of-the-art 3D generator of the source domain to synthesize high resolution, multi-view consistent images in text-guided targeted domains without additional data, outperforming the existing text-guided domain adaptation methods in diversity and text-image correspondence.
-            Furthermore, we propose and demonstrate diverse 3D image manipulations such as one-shot instance-selected adaptation and single-view manipulated 3D reconstruction to fully enjoy diversity in text.
+            Normalizing flows have been successfully modeling a complex probability distribution as an invertible transformation of a simple base distribution. However, there are often applications that require more than invertibility. For instance, the computation of energies and forces in physics requires the second derivatives of the transformation to be well-defined and continuous. Smooth normalizing flows employ infinitely differentiable transformation, but with the price of slow non-analytic inverse transforms. In this work, we propose diffeomorphic non-uniform B-spline flows that are at least twice continuously differentiable while bi-Lipschitz continuous, enabling efficient parametrization while retaining analytic inverse transforms based on a sufficient condition for diffeomorphism. Firstly, we investigate the sufficient condition for $\mathcal{C}^{k-2}$-diffeomorphic non-uniform $k$th-order B-spline transformations. Then, we derive an analytic inverse transformation of the non-uniform cubic B-spline transformation for neural diffeomorphic non-uniform B-spline flows. Lastly, we performed experiments on solving the force matching problem in Boltzmann generators, demonstrating that our $\mathcal{C}^2$-diffeomorphic non-uniform B-spline flows yielded solutions better than previous spline flows and faster than smooth normalizing flows.
           </p>
         </div>
       </div>
