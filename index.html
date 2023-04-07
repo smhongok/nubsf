@@ -163,15 +163,19 @@
   <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-            <h2 class="title is-3">Video</h2>
+            <h2 class="title is-3">Key Contribution</h2>
         </div>
       </div>
 
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/Supplementary_video_DATID-3D.mp4"
-                type="video/mp4">
-      </video>
+      <img id="overview"
+              height={"100%"}
+              src="./static/images/contribution.png"
+              alt={"overview"}>
+      </img>
+      <h2 className="subtitle has-text-centered">
+          Overview of DATID-3D, our novel pipeline for text-guided domain adaptation of 3D generative models. We construct target dataset using the pre-trained text-to-image diffusion models, followed by refining the dataset through filtering process. Finally, we fine-tune our models using adversarial loss and density regularization.
+      </h2>
       <h2 class="subtitle has-text-centered">
         <p>
         <b> DATID-3D </b> succeeded in text-guided domain adaptation of 3D-aware generative models while <b>preserving diversity that is inherent in the text prompt</b>  as well as <b>enabling high-quality pose-controlled image synthesis with excellent text-image correspondence</b> .
