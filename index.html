@@ -103,7 +103,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2211.16374.pdf"
+                <a href="https://arxiv.org/pdf/2304.04555.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -112,7 +112,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2211.16374"
+                <a href="https://arxiv.org/abs/2304.04555"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -132,21 +132,12 @@
 <!--              </span>-->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/gwang-kim/DATID-3D"
+                <a href="https://github.com/smhongok/Non-uniform-B-spline-Flow"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
-              </span>
-              <span class="link-block">
-                <a href="https://colab.research.google.com/drive/1e9NSVB7x_hjz-nr4K0jO4rfTXILnNGtA?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-magic"></i>
-                  </span>
-                  <span>Colab Demo</span>
                   </a>
               </span>
                   </a>
@@ -200,161 +191,7 @@
     <!--/ Abstract. -->
   </div>
 </section>
- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Overview</h2>
-          <div className="container is-max-desktop">
-              <img id="overview"
-                      height={"100%"}
-                      src="./static/images/method1.png"
-                      alt={"overview"}>
-              </img>
-              <h2 className="subtitle has-text-centered">
-                  Overview of DATID-3D, our novel pipeline for text-guided domain adaptation of 3D generative models. We construct target dataset using the pre-trained text-to-image diffusion models, followed by refining the dataset through filtering process. Finally, we fine-tune our models using adversarial loss and density regularization.
-              </h2>
-          </div>
 
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Interactive demo</h2>
-
-          <div className="item is-max-desktop">
-              <img id="demo"
-                      style="width:70%;height:auto;"
-                      src="./static/images/datid3d_gradio.gif"
-                      alt={"result1"}>
-              <h2 className="subtitle has-text-centered">
-                  We provide a interactive Gradio app as well as Colab demo to enjoy the results of DATID-3D.
-              </h2>
-          </div>
-
-      </div>
-    </div>
-
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Pose-controlled images and 3D shapes</h2>
-
-          <div className="item is-max-desktop">
-              <img id="result4"
-                      style="width:100%;height:auto;"
-                      src="./static/images/method1-result4.png"
-                      alt={"result1"}>
-          </div>
-
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Instance-selected domain adaptation</h2>
-
-          <div className="container is-max-desktop">
-              <img id="instance_selected"
-                      style="width:60%;height:auto;"
-                      src="./static/images/method2.png"
-                      alt={"instance_selected"}>
-              </img>
-              <h2 className="subtitle has-text-centered">
-                  One-shot fine-tuning of text-to-image diffusion models for instance-selected domain adaptation. Resulting text-to-image diffusion models are applied to the Stage 1.
-              </h2>
-          </div>
-
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-
-          <div className="item is-max-desktop">
-              <img id="result5"
-                      style="width:60%;height:auto;"
-                      src="./static/images/method2-result1.png"
-                      alt={"result1"}>
-              </img>
-              <h2 className="subtitle has-text-centered">
-                  Results of instance-selected domain adaptation, selecting one Pixar sample to generate more diverse samples for it.
-              </h2>
-          </div>
-
-      </div>
-    </div>
-
-        <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Single-view 3D manipulated reconstruction</h2>
-
-          <div className="item is-max-desktop">
-              <img id="result6"
-                      style="width:60%;height:auto;"
-                      src="./static/images/method2-result2.png"
-                      alt={"result1"}>
-              </img>
-              <h2 className="subtitle has-text-centered">
-                  As advancements of prior 2D text-guided image manipulation, our method enables (1) lifting the text-guided manipulated images to 3D and (2) choosing one among diverse results from one text prompt.
-              </h2>
-          </div>
-
-      </div>
-    </div>
-
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Wide range of text-guided adaption results</h2>
-
-          <div className="item is-max-desktop">
-              <img id="result1"
-                      style="width:100%;height:auto;"
-                      src="./static/images/method1-result1.png"
-                      alt={"result1"}>
-              </img>
-<!--              <h2 className="subtitle has-text-centered">-->
-<!--                  One-shot fine-tuning of text-to-image diffusion models for instance-selected domain adaptation. Resulting text-to-image diffusion models are applied to the Stage 1.-->
-<!--              </h2>-->
-          </div>
-
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-          <div className="item is-max-desktop">
-              <img id="result2"
-                      style="width:100%;height:auto;"
-                      src="./static/images/method1-result2.png"
-                      alt={"result1"}>
-              </img>
-<!--              <h2 className="subtitle has-text-centered">-->
-<!--                  One-shot fine-tuning of text-to-image diffusion models for instance-selected domain adaptation. Resulting text-to-image diffusion models are applied to the Stage 1.-->
-<!--              </h2>-->
-          </div>
-
-      </div>
-    </div>
-
-        <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-          <div className="item is-max-desktop">
-              <img id="result3"
-                      style="width:100%;height:auto;"
-                      src="./static/images/method1-result3.png"
-                      alt={"result1"}>
-
-          </div>
-
-      </div>
-    </div>
-
-
-  </div>
-</section>
 
 
 
@@ -362,13 +199,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{kim2022datid3d,
-      title={DATID-3D: Diversity-Preserved Domain Adaptation Using Text-to-Image Diffusion for 3D Generative Model},
-      author={Gwanghyun Kim and Se Young Chun},
-      year={2022},
-      eprint={2211.16374},
+    <pre><code>@misc{hong2023neural,
+      title={Neural Diffeomorphic Non-uniform B-spline Flows}, 
+      author={Seongmin Hong and Se Young Chun},
+      year={2023},
+      eprint={2304.04555},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      primaryClass={cs.LG}
 }</code></pre>
   </div>
 </section>
@@ -381,7 +218,7 @@
 <!--         href="">-->
 <!--        <i class="fas fa-file-pdf"></i>-->
 <!--      </a>-->
-      <a class="icon-link" href="https://github.com/gwang-kim" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/smhongok" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
